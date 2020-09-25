@@ -36,5 +36,12 @@ def fib(n):
     elif n == 1:
         return 1
     else:
-        return fib(n-1)+fib(n-2)        
+        return fib(n-1)+fib(n-2)
+
+def geometric(a, ratio, n):
+    '''Calculates the sum of a geometric serie of n elements.
+       A geometric sequence is of the form: a, a*r, a*r*r, a*r*r*r,...
+       n is the number of elements in the sequence.'''
+    #Use the sum formula:
+    return a*(1-ratio**n)/(1-ratio)        
 
